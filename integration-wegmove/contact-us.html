@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+
+<head>
+    <!--metadados da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Contate-nos</title>
+
+    <!-- Ícone exibido na aba -->
+    <link rel="shortcut icon" href="./imagens/wegmove-icon1.1.1.ico" type="image/x-icon">
+
+    <!-- Importa a folha de estilos externa -->
+    <link rel="stylesheet" href="./estilos/estilo2.css">
+</head>
+
+<body>
+    <!-- Container principal do conteúdo -->
+    <div class="boxGeral">
+        <!-- Título principal da seção -->
+        <h1 style="color: #050b50;">Contate-nos </h1>
+
+        <!-- Início do formulário de contato -->
+        <form action="./index.html" method="post">
+
+            <!-- Campo para o nome do usuário -->
+            <label for="nome">Nome: </label><br>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required><br>
+            <br>
+
+            <!-- Campo para o e-mail do usuário -->
+            <label for="e-mail">E-mail:</label><br>
+            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required> <br>
+            <br>
+
+            <!-- Campo para o assunto da mensagem -->
+            <label for="asssunto">Assunto:</label><br>
+            <input type="text" name="asssunto" id="asssunto" placeholder="assunto" required> <br>
+            <br>
+
+            <!-- Campo para o corpo da mensagem -->
+            <label for="">Mensagem:</label><br>
+            <textarea name="mensagem" id="id_mensagem" cols="45" rows="12"
+                placeholder="Escreva aqui sua mensagem"></textarea>
+            <br>
+            <hr>
+
+            <!-- Botões de ação -->
+            <input class="buttonForm" type="submit" value="Enviar">
+            <input class="buttonForm" type="reset" value="Limpar">
+
+            <!-- Botão de voltar -->
+            <a href="./index.html">
+                <button class="buttonForm" type="button">Voltar</button>
+            </a>
+        </form>
+    </div>
+
+</body>
