@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro Motorista</title>
+
+    <!-- Ícone da aba do navegador -->
+    <link rel="shortcut icon" href="./imagens/wegmove-icon1.1.1.ico" type="image/x-icon">
+
+    <!-- Importa os estilos da página -->
+    <link rel="stylesheet" href="./estilos/estilo2.css">
+
+</head>
+
+<body>
+    <!-- Container principal do formulário -->
+    <div class="boxGeral">
+
+        <!-- Título da página -->
+        <h1 style="color: #050b50; text-align: center;">Cadastro do Motorista Parceiro</h1>
+
+        <!-- Formulário de cadastro -->
+        <form action="./cad-endereco-motorista.htm" method="get">
+
+             <!-- Linha 1: Nome e Sobrenome -->
+            <div class="bRow">
+
+                <div class="bCollum">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+                </div>
+                <div class="bCollum">
+
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+
+                </div>
+                
+            </div>
+
+            <!-- Linha 2: Código do crachá e upload de identidade -->
+            <label for="codigo-cracha">Código do crachá:</label><br>
+            <input type="number" name="codigo-cracha" id="codigo-cracha" placeholder="Código do crachá" required>
+            <br>
+            <br>
+
+             <!-- E-mail -->
+            <label for="e-mail">E-mail:</label><br>
+            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required> <br>
+            <br>
+
+            <!-- Telefone -->
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone:" required> <br>
+            <br>
+            <label for="id_CI2">Foto da carteira de Identidade:</label><br>
+            <input type="file" name="ci" id="id_CI2"><br><br>
+            <label for="id_cnh">Foto da CNH:</label><br>
+            <input type="file" id="id_cnh"><br>
+            <hr>
+
+             <!-- Botões do formulário -->
+            <div>
+                <input class="buttonForm" type="submit" value="Enviar">
+                <input class="buttonForm" type="reset" value="Limpar">
+
+                 <!-- Botão de voltar para a página inicial -->
+                <a href="../index.html"><button class="buttonForm" type="button">Voltar</button></a>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+
+</html>

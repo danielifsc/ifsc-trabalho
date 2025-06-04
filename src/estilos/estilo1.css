@@ -1,0 +1,214 @@
+/* Reset padrão para remover margens e paddings nativos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página com fonte base e cor de fundo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Estilização geral do cabeçalho */
+header {
+  width: 100%;                        /* Ocupa toda a largura da tela */
+  background-color: #002A61;         /* Cor de fundo azul escuro */
+  padding: 10px 0;                   /* Espaçamento interno (vertical) */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra leve para profundidade */
+  position: fixed;                       /* mantem o header sempre junto na rolagem da pagina */
+  
+}
+button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Container centralizado com limite de largura */
+.container {
+  max-width: 1200px;                 /* Largura máxima */
+  margin: 0 auto;                    /* Centraliza horizontalmente */
+  padding: 0 20px;                   /* Espaço lateral interno */
+  display: flex;                     /* Alinha os itens na horizontal */
+  justify-content: space-between;   /* Espaço entre logo, menu e botão */
+  align-items: center;              /* Alinha verticalmente ao centro */
+}
+
+/* Estilo da logo */
+.logo img {
+  max-width: 120px;                 /* Tamanho máximo da imagem da logo */
+}
+
+/* Menu de navegação */
+.menu ul {
+  list-style: none;                 /* Remove os marcadores da lista */
+  display: flex;                    /* Coloca os itens lado a lado */
+  gap: 30px;                        /* Espaço entre os itens do menu */
+}
+
+.menu a {
+  color: #fff;                      /* Cor do texto do menu */
+  text-decoration: none;            /* Remove o sublinhado */
+  font-size: 16px;                  /* Tamanho da fonte */
+  transition: 0.3s ease;            /* Animação suave ao passar o mouse */
+}
+
+.menu a:hover {
+  color: #FFD700;                   /* Cor ao passar o mouse (dourado) */
+}
+
+/* Botão de contato */
+.btn-contato buttonC, button {
+  background-color: transparent;    /* Fundo transparente */
+  border: 1px solid #fff;           /* Borda branca */
+  color: #fff;                      /* Cor do texto */
+  padding: 10px 20px;               /* Espaçamento interno */
+  border-radius: 20px;              /* Borda arredondada */
+  font-size: 16px;                  /* Tamanho do texto */
+  cursor: pointer;                  /* Cursor de mãozinha */
+  transition: 0.3s ease;            /* Animação suave */
+}
+
+.btn-contato buttonC,button:hover {
+  background-color: #FFD700;        /* Fundo dourado ao passar o mouse */
+  color: #002A61;                   /* Texto azul escuro no hover */
+}
+
+
+/* Fim do cabeçalho */              
+
+
+
+/* estilo do topo do site */
+
+/* Estiliza a seção do topo do site */
+section.topo-site {
+  /* Aplica um fundo em degradê inclinado em 20 graus */
+  background-image: linear-gradient(20deg, #002A61, #070000);
+  /* Espaçamento interno (topo/baixo: 20px, laterais: 2%) */
+  padding: 20px 2%;
+}
+
+/* Define estilos comuns para os elementos de texto e imagem do topo */
+.txt-topo, .img-topo {
+  /* Coloca os dois elementos lado a lado */
+  display: inline-block;
+  /* Remove o espaço entre elementos inline */
+  margin-right: -4px;
+  /* Cada um ocupa 50% da largura */
+  width: 50%;
+  /* Alinha verticalmente no meio */
+  vertical-align: middle;
+}
+
+/* Define a cor do texto como branco */
+.txt-topo {
+  color: #fff;
+}
+
+/* Estiliza o título (h1) do topo */
+.txt-topo h1 {
+  font-size: 3.5rem; /* Tamanho grande da fonte */
+  line-height: 60px; /* Altura da linha para espaçamento vertical */
+}
+
+/* Coloca o conteúdo do <span> em bloco para quebrar linha */
+.txt-topo h1 span {
+  display: block;
+}
+
+/* Estiliza o parágrafo no topo */
+.txt-topo p {
+  font-size: 1.3rem;
+  margin: 20px 0; /* Espaço acima e abaixo do parágrafo */
+}
+
+/* Estiliza o botão no topo */
+.txt-topo button {
+  width: 240px;
+  height: 50px;
+  border-radius: 30px; /* Deixa o botão arredondado */
+}
+
+/* Define a largura da imagem no topo */
+.img-topo img {
+  width: 60%;
+}
+
+/* ---------------------- */
+/* Seção de Vantagens (Skills) */
+/* ---------------------- */
+
+/* Container da seção de habilidades */
+.skills-container {
+  width: 100%;
+  text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Seção de habilidades com espaçamento interno */
+section.skills {
+  padding: 80px 0; /* Espaço acima e abaixo */
+}
+
+/* Estiliza o título da seção */
+.skills .titulo-sessao {
+  text-align: center;
+}
+
+/* Estiliza o título h2 dentro da seção */
+.skills .titulo-sessao h2 {
+  color: #002A61; /* Cor azul escura */
+  font-size: 2.3rem;
+  margin-bottom: 60px; /* Espaço abaixo do título */
+}
+
+/* Estiliza cada box de habilidade */
+.skills .skills-box {
+  display: inline-block; /* Deixa os boxes lado a lado */
+  width: 30%; /* Cada box ocupa 30% da largura */
+  margin-right: -4px; /* Ajuste de espaçamento lateral */
+  margin: 0 1%; /* Espaço entre os boxes */
+
+  text-align: center;
+
+  border: 2px solid #002A61; /* Borda azul */
+  padding: 80px 4%; /* Espaço interno */
+  border-radius: 0 70px 30px; /* Cantos arredondados em formatos diferentes */
+  box-shadow: 10px 10px 0 #002A61; /* Sombra com cor azul escura */
+}
+
+/* Imagem dentro da caixa de habilidades */
+.skills .skills-box img {
+  width: 60%;
+}
+
+/* Título da skill */
+.skills .skills-box h3 {
+  color: #002A61;
+  margin: 15px 0;
+}
+
+/* Parágrafo dentro da skill */
+.skills .skills-box p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ---------------------- */
+/* Ajustes para botões de contato */
+/* ---------------------- */
+
+/* Link dentro do botão de contato */
+.btn-contato a {
+  margin-left: 10px; /* Espaço entre os botões */
+  text-decoration: none; /* Remove sublinhado */
+}
+
+/* Remove margem esquerda do primeiro botão */
+.btn-contato a:first-child {
+  margin-left: 0;
+}

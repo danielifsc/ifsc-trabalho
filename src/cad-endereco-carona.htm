@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados básicos -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
+    <title>Cadastro do Endereço</title>
+
+    <!-- Ícone da aba -->
+    <link rel="shortcut icon" href="./imagens/wegmove-icon1.1.1.ico" type="image/x-icon">
+
+    <!-- Estilo externo -->
+    <link rel="stylesheet" href="./estilos/estilo2.css">
+</head>
+
+<body>
+    <!-- Container principal -->
+    <div class="boxGeral">
+        <h1 style="color: #050b50; text-align: center;">Cadastro do Endereço</h1>
+
+        <!-- Início do formulário -->
+        <form action="./end-form.htm">
+
+            <!-- Linha com CEP e Cidade -->
+            <div class="bRow">
+                <!-- Coluna: CEP -->
+                <div class="bCollum">
+                    <label for="id_cep">CEP:</label>
+                    <input type="text" id="id_cep" name="cep" placeholder="CEP" required><br>
+                </div>
+
+                <!-- Coluna: Cidade -->
+                <div class="bCollum">
+                    <label for="id_cidade">Cidade:</label>
+                    <select name="cidade" id="id_cidade" required>
+                        <option value="none" selected disabled style="color: gray;">Selecione uma cidade</option>
+                        <option value="Jaraguá do Sul">Jaraguá do Sul</option>
+                        <option value="Guaramirim">Guaramirim</option>
+                        <option value="Curupá">Curupá</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Campo: Bairro -->
+            <label for="id_bairro">Bairro:</label><br>
+            <input type="text" id="id_bairro" name="bairro" placeholder="Bairro" required><br><br>
+
+            <!-- Campo: Logradouro -->
+            <label for="id_logr">Logradouro:</label><br>
+            <input type="text" id="id_logr" name="logradouro" placeholder="Logradouro" required><br><br>
+
+            <!-- Linha com Número e Complemento -->
+            <div class="bRow">
+                <!-- Coluna: Número -->
+                <div class="bCollum">
+                    <label for="id_num">Número:</label>
+                    <input type="text" id="id_num" name="numero" placeholder="Número" required><br>
+                </div>
+
+                <!-- Coluna: Complemento -->
+                <div class="bCollum">
+                    <label for="id_complemento">Complemento:</label>
+                    <input type="text" id="id_complemento" name="complemento" placeholder="Complemento" required><br>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Botões de ação -->
+            <input class="buttonForm" type="submit" value="Concluir Cadastro">
+            <input class="buttonForm" type="reset" value="Limpar">
+            <!-- Botão de voltar -->
+            <a href="../index.html">
+                <button class="buttonForm" type="button">Voltar</button>
+            </a>
+
+        </form>
+    </div>
+</body>
+
+</html>
