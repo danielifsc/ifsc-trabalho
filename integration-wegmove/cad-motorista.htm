@@ -2,84 +2,79 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Metadados da página -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Título da aba -->
-    <title>Cadastro do Endereço</title>
+    <title>Cadastro Motorista</title>
 
-    <!-- Ícone da aba -->
+    <!-- Ícone da aba do navegador -->
     <link rel="shortcut icon" href="./imagens/wegmove-icon1.1.1.ico" type="image/x-icon">
 
-    <!-- Estilo externo -->
+    <!-- Importa os estilos da página -->
     <link rel="stylesheet" href="./estilos/estilo2.css">
+
 </head>
 
 <body>
-    <!-- Container principal -->
+    <!-- Container principal do formulário -->
     <div class="boxGeral">
-        <h1 style="color: #050b50;">Cadastro do Endereço</h1>
 
-        <!-- Início do formulário -->
-        <form action="./cad-carro.htm">
+        <!-- Título da página -->
+        <h1 style="color: #050b50; text-align: center;">Cadastro do Motorista Parceiro</h1>
 
-            <!-- Linha com CEP e Cidade -->
+        <!-- Formulário de cadastro -->
+        <form action="./cad-endereco-motorista.htm" method="get">
+
+             <!-- Linha 1: Nome e Sobrenome -->
             <div class="bRow">
-                <!-- Coluna: CEP -->
-                <div class="bCollum">
-                    <label for="id_cep">CEP:</label>
-                    <input type="text" id="id_cep" name="cep" placeholder="CEP" required><br>
-                </div>
 
-                <!-- Coluna: Cidade -->
                 <div class="bCollum">
-                    <label for="id_cidade">Cidade:</label>
-                    <select name="cidade" id="id_cidade" required>
-                        <option value="none" selected disabled style="color: gray;">Selecione uma cidade</option>
-                        <option value="Jaraguá do Sul">Jaraguá do Sul</option>
-                        <option value="Guaramirim">Guaramirim</option>
-                        <option value="Curupá">Curupá</option>
-                    </select>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
                 </div>
+                <div class="bCollum">
+
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+
+                </div>
+                
             </div>
 
-            <!-- Campo: Bairro -->
-            <label for="id_bairro">Bairro:</label><br>
-            <input type="text" id="id_bairro" name="bairro" placeholder="Bairro" required><br><br>
+            <!-- Linha 2: Código do crachá e upload de identidade -->
+            <label for="codigo-cracha">Código do crachá:</label><br>
+            <input type="number" name="codigo-cracha" id="codigo-cracha" placeholder="Código do crachá" required>
+            <br>
+            <br>
 
-            <!-- Campo: Logradouro -->
-            <label for="id_logr">Logradouro:</label><br>
-            <input type="text" id="id_logr" name="logradouro" placeholder="Logradouro" required><br><br>
+             <!-- E-mail -->
+            <label for="e-mail">E-mail:</label><br>
+            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required> <br>
+            <br>
 
-            <!-- Linha com Número e Complemento -->
-            <div class="bRow">
-                <!-- Coluna: Número -->
-                <div class="bCollum">
-                    <label for="id_num">Número:</label>
-                    <input type="text" id="id_num" name="numero" placeholder="Número" required><br>
-                </div>
-
-                <!-- Coluna: Complemento -->
-                <div class="bCollum">
-                    <label for="id_complemento">Complemento:</label>
-                    <input type="text" id="id_complemento" name="complemento" placeholder="Complemento" required><br>
-                </div>
-            </div>
-
+            <!-- Telefone -->
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone:" required> <br>
+            <br>
+            <label for="id_CI2">Foto da carteira de Identidade:</label><br>
+            <input type="file" name="ci" id="id_CI2"><br><br>
+            <label for="id_cnh">Foto da CNH:</label><br>
+            <input type="file" id="id_cnh"><br>
             <hr>
 
-            <!-- Botões de ação -->
-            <input class="buttonForm" type="submit" value="Enviar e Continuar">
-            <input class="buttonForm" type="reset" value="Limpar">
+             <!-- Botões do formulário -->
+            <div>
+                <input class="buttonForm" type="submit" value="Enviar">
+                <input class="buttonForm" type="reset" value="Limpar">
 
-            <!-- Botão de voltar -->
-            <a href="./index.html">
-                <button class="buttonForm" type="button">Voltar</button>
-            </a>
-
+                 <!-- Botão de voltar para a página inicial -->
+                <a href="./index.html"><button class="buttonForm" type="button">Voltar</button></a>
+            </div>
         </form>
+
+
     </div>
 </body>
 
